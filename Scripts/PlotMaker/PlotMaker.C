@@ -209,13 +209,12 @@ void PlotMaker::Loop()
 
 
    ofstream ParamOutput (OutputFilename + ".par");
-   ParamOutput << "//FileName:" << endl;
    ParamOutput << OutputFilename << endl;
    for(int i=0; i<9; i++){
      ParamOutput << AmpFitFunc->GetParameter(i) << "\t" << TimeFitFunc->GetParameter(i) << "\t"
-                 << AmpFitFunc->GetParError(i) << "\t" << TimeFitFunc->GetParError(i)
-                 << AParamLimit[i] << "\t" << AParamLow[i] << "\t" << AParamHigh[i]
-                 << TParamLimit[i] << "\t" << TParamLow[i] << "\t" << TParamHigh[i];
+                 << AmpFitFunc->GetParError(i) << "\t" << TimeFitFunc->GetParError(i) << "\t"
+                 << AParamLimit[i] << "\t" << AParamLow[i] << "\t" << AParamHigh[i] << "\t"
+                 << TParamLimit[i] << "\t" << TParamLow[i] << "\t" << TParamHigh[i] << "\t"
                  << endl;
    }
    ParamOutput<<NbinsAmp<< "\t" <<lowAmp<< "\t" <<highAmp<<endl;
