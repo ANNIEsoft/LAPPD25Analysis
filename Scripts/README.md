@@ -25,5 +25,11 @@ The first parameter in PlotMaker is a string of the subdirectory where the data 
 The second parameter is the string of the file you want to process (but without the extension). We aren't strict about it,
 but the approximate naming convention is:
 
-[date]LAPP25_[stripnumber/side]_[v1]_[v2]_[v3] (where v1,v2,v3 are the operational voltages)
+date LAPP25_stripnumber/side_v1_v2_v3 (where v1,v2,v3 are the operational voltages)
+
+The organization of the (overly complicated) config file is explained in this google doc:
+
+https://docs.google.com/spreadsheets/d/1IiCAuay1Hy16xh-tApT0VsSC9bjcq-Y4wLmGMdFsqrg/edit?usp=sharing
+
+
 
