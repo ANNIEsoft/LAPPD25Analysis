@@ -243,8 +243,18 @@ Figure~\ref{fig:amp} shows the amplitude distribution for pulses at our nominal 
 
 \begin{figure}
 	\centering
-       \includegraphics[width=0.52\linewidth]{plots/Amplitudes_notlog}  
-       \caption{The amplitude distribution for pulses on a single-side of a stripline anode.}
+       \includegraphics[angle=90, width=0.45\linewidth]{plots/positions}  
+       \caption{The laser positions used for the spatial uniformity scan with respect to the anode pattern. These laser positions are identified by their strip number (counting up from one) and on which side of the strip the laser was located (L=left, C=center, R=right)}
+	\label{fig:positions}
+\end{figure}
+
+\begin{figure}
+	\centering
+        \begin{tabular}{l l}
+                \includegraphics[width=0.48\linewidth]{plots/SinglePEAmplitudePeak_notitle} &
+                \includegraphics[width=0.48\linewidth]{plots/SinglePETimeResolution_notitle}\\
+         \end{tabular}  
+       \caption{LEFT: Variation in the fitted single PE peak amplitude for data collected at each of the 11 positions on LAPPD-25 shown in Fig~\ref{fig:positions}. RIGHT: Variation in the fitted time resolution of the main peak of the transit time spread distribution for the same 11 positions.}
 	\label{fig:amp}
 \end{figure}
 
@@ -259,9 +269,10 @@ Figure~\ref{fig:amp} shows the amplitude distribution for pulses at our nominal 
 	\centering
         \begin{tabular}{l}
                 \includegraphics[width=0.6\linewidth]{plots/difftime} \\
-                \includegraphics[width=0.58\linewidth]{plots/differentialtimevsparallelposition}
+                \includegraphics[width=0.55
+            \linewidth]{plots/differentialtimevsparallelposition}
          \end{tabular}  
-       \caption{The amplitude distribution for pulses on a single-side of a stripline anode.}
+       \caption{TOP: The differential timing distributions for each position taken during the parallel scan. BOTTOM: Fitted mean differential time as a function of position (10x errors) with a linear regression.}
 	\label{fig:amp}
 \end{figure}
 
